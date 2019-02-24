@@ -1,0 +1,9 @@
+---
+ - name: Create a login user
+     user:
+      name: user1
+      state: present
+      shell: /bin/bash       # Defaults to /bin/bash
+      system: no             # Defaults to no
+      createhome: yes        # Defaults to yes
+      home: /home/user  # Defaults to /home/<username>
